@@ -1,29 +1,165 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
+
     <meta charset="utf-8">
-    <title>index</title>
+    <title>Tweeter</title>
+
+    <!-- This is a 3rd-party stylesheet to incorporate the font family to be used for this page ("Roboto"). -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+
+    <!-- This 3rd-party stylesheet incorporates SVG icons from Font Awesome: http://fontawesome.com/ -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css" media="screen">
+
   </head>
+
   <body>
-    <h1>ABOUT ME</h1>
-    <h2>(index.html)</h2>
-    <a href="blog.html">link back to code blog</a>
-    <ul>
-      <li>My name is sophia, my friends call me sophie.</li>
-      <p></p>
-      <li>My email is boucks@oregonstate.edu.</li>
-      <p></p>
-      <li>I am a sophomore computer science major.</li>
-      <p></p>
-      <li>All of my web dev skills go back when I was in high school. I worked on making simple webpages using HTML and CSS and published one at the end of the class.</li>
-      <p></p>
-      <li>I hope to brush up on my existing skills and elevate my understanding to a college level.</li>
-      <p></p>
-      <li>I have signed up to Campuswire.</li>
-      <p></p>
-      <li>One interesting thing about me is that I used to want to be a ballerina for a career. I spent around 15 years of my life training for it. This lead to me getting burned out, however, and I went to college for my second choice, comp sci.</li>
-      <p></p>
-   </ul>
-      <img src="1.MP.jpg" alt="concert photo" width="300" height="200">
+
+    <header>
+      <!-- The <i> tag below includes the lizard hand icon from Font Awesome.  Do not directly style this element. -->
+      <a href="#"><h1 class="site-title"><i class="far fa-hand-lizard"></i> tweeter</h1></a>
+
+      <nav class="navbar">
+        <ul class="navlist">
+          <li class="navitem navlink active"><a href="#">Home</a></li>
+          <li class="navitem navlink"><a href="#">Trending</a></li>
+          <li class="navitem navlink"><a href="#">People</a></li>
+          <li class="navitem navbar-search">
+            <input type="text" id="navbar-search-input" placeholder="Search...">
+            <button type="button" id="navbar-search-button"><i class="fas fa-search"></i></button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="twit-container">
+
+      <article class="twit">
+        <div class="twit-icon">
+          <!-- The <i> tag below includes the bullhorn icon from Font Awesome.  Do not directly style this element. -->
+          <i class="fas fa-bullhorn"></i>
+        </div>
+        <div class="twit-content">
+          <p class="twit-text">
+            Sitting in my web dev lecture... This class is so awesome!  Pass the popcorn.
+          </p>
+          <p class="twit-author">
+            <a href="#">CSMajor2022</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="twit">
+        <div class="twit-icon">
+          <!-- The <i> tag below includes the bullhorn icon from Font Awesome.  Do not directly style this element. -->
+          <i class="fas fa-bullhorn"></i>
+        </div>
+        <div class="twit-content">
+          <p class="twit-text">
+            Beavers baseball team is looking pretty darn good again this year.  Go Beavs!
+          </p>
+          <p class="twit-author">
+            <a href="#">BeaverBeliever</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="twit">
+        <div class="twit-icon">
+          <!-- The <i> tag below includes the bullhorn icon from Font Awesome.  Do not directly style this element. -->
+          <i class="fas fa-bullhorn"></i>
+        </div>
+        <div class="twit-content">
+          <p class="twit-text">
+            A body in motion must remain in motion unless acted upon by an outside force.
+          </p>
+          <p class="twit-author">
+            <a href="#">NewtonRulez</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="twit">
+        <div class="twit-icon">
+          <!-- The <i> tag below includes the bullhorn icon from Font Awesome.  Do not directly style this element. -->
+          <i class="fas fa-bullhorn"></i>
+        </div>
+        <div class="twit-content">
+          <p class="twit-text">
+            Huh?
+          </p>
+          <p class="twit-author">
+            <a href="#">ConfusedTweeterer</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="twit">
+        <div class="twit-icon">
+          <!-- The <i> tag below includes the bullhorn icon from Font Awesome.  Do not directly style this element. -->
+          <i class="fas fa-bullhorn"></i>
+        </div>
+        <div class="twit-content">
+          <p class="twit-text">
+            Why did the calf cross the road?
+          </p>
+          <p class="twit-author">
+            <a href="#">Setup</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="twit">
+        <div class="twit-icon">
+          <!-- The <i> tag below includes the bullhorn icon from Font Awesome.  Do not directly style this element. -->
+          <i class="fas fa-bullhorn"></i>
+        </div>
+        <div class="twit-content">
+          <p class="twit-text">
+            To get to the udder side!
+          </p>
+          <p class="twit-author">
+            <a href="#">Punchline</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="twit">
+        <div class="twit-icon">
+          <!-- The <i> tag below includes the bullhorn icon from Font Awesome.  Do not directly style this element. -->
+          <i class="fas fa-bullhorn"></i>
+        </div>
+        <div class="twit-content">
+          <p class="twit-text">
+            Any questions about flexboxes?
+          </p>
+          <p class="twit-author">
+            <a href="#">Hess</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="twit">
+        <div class="twit-icon">
+          <!-- The <i> tag below includes the bullhorn icon from Font Awesome.  Do not directly style this element. -->
+          <i class="fas fa-bullhorn"></i>
+        </div>
+        <div class="twit-content">
+          <p class="twit-text">
+            Friendly reminder: the tax deadline was yesterday.
+          </p>
+          <p class="twit-author">
+            <a href="#">TheIRS</a>
+          </p>
+        </div>
+      </article>
+
+    </main>
+
+    <button type="button" id="create-twit-button"><i class="fas fa-bullhorn"></i></button>
+
   </body>
+
 </html>
